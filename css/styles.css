@@ -1,226 +1,92 @@
+html {
+  scroll-padding-top: 200px; 
+}
+
 body{
     padding: 4%;
     margin: 4%;
-}
+   }
+
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
-li{
-    list-style: none;
-    margin-right: 10px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-#navbar{
-    display: flex;
-    flex-direction: row;
-    position:fixed;
-    justify-content:flex-end;
-    background-color: cornflowerblue;
-    height: 50px;
-   align-items: center;
-   line-height: 20px;
-   font-size: 20px;
-   z-index: 1;
-   width: 84%;
-  
-   
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-items:center; 
- 
+
+.navbar {
+    background-image: linear-gradient(180deg, green, blue);
 }
 
-#welcome{
+h1{
+    text-align: center;
+}
+.padding-top{
+    padding-top:50vh;
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    border: solid black 1px;
+.welcome{
     background: url('https://wallpaperaccess.com/full/2876582.jpg') no-repeat;
-    
-    background-size: cover;
-  height: 100vh;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-#about{
-    padding: 2%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    margin-top: 50px;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 100px;
 }
-.about{
-  
-  
-  display:flex;
-  flex-direction: row;
 
-
-}
-#skill{
-display: flex;
-width: 70%;
-background-color:#DCDCDC;
-margin: 0 4% 0 4%;
-
-}
-#skill li{
-    margin-top: 10px;
-}
 
 #projects{
-   
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    position: relative;
-    margin-top: 250px;
-    
-    
-}
-#projects h1{
-    display: flex;
-    text-align: center;
-   
-    background-color:#5F9EA0;
-   height: 50px;
-   margin-top: 220px;
-  align-items: center;
-  justify-content: center;
-}
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4%;
-   justify-self: self-start;
-  align-self:center;
+   margin-top: 250px;
+    margin-bottom: 100px;
     }
-    .container div{
-      margin-bottom: 20px;  
-    }
+
+#about{
+  margin-top: 350px;
+}
+
 #contacts{
    
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 40px;
-}
-#contacts div{
-    margin-bottom: 20px;
-    font-size: 120%;
-}
-#Project1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    background-image: linear-gradient(180deg,#90EE90,#FFFAF0);
   
-    border: solid black 1px; 
-    height: 100vh;
-}
-#Project2{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-   
-    border: solid black 1px;
-}
-#Project3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid black 1px;
-}
-#Project4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid black 1px;
-}
-.btn{
-    cursor:pointer;
-}
-
-@media (max-width:600px) { 
-
-    #navbar{
-        display: flex;
-        flex-direction: row;
-        position:fixed;
-     
-        background-color: cornflowerblue;
-        height: 50px;
-       align-items:center;
-       justify-content: flex-start;
-     
-       line-height: 120%;
-       font-size: 120%;
-       z-index: 1;
-       max-width: 84%;.
-
-    
-     }
-     
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        padding-left: 0%;
-         }
-    li{
-        list-style: none;
-        /*margin-right: 2%;*/
-       
     }
-    .about{
-  
-  
-        display:flex;
-        flex-direction:column;
-      
-      
+    @keyframes Hi {
+        0%   {color: red;font-size:2em}
+        25%  {color: yellow;font-size:1em}
+        50%  {color: blue;}
+        100% {color: green;}
       }
-   
-    #skill{
-        display: flex;
-        width: 84%;
-        background-color:#DCDCDC;
+      h1 {
+        
+        color:black;
+        animation-name: Hi;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes fontZise {
+        0%   {font-size:2em}
+        25%  {font-size:1em}
+        50%  {font-size:2em;}
+        100% {font-size:1em}
+      }
+      .frontEnd {
+        
+        color:black;
+        animation-name: fontZise;
+        animation-duration: 6s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes fadeinSize {
+        0%   {font-size:2em;}
+        25%  {font-size:1em;}
+        50%  {opacity:1;font-size:2em}
+        100% {font-size:1em}
+      }
+      h4 {
+        
+        color:black;
+        animation-name: fadeinSize;
+        animation-duration: 6s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+      }
       
-        }
-        .container{
-            display: grid;
-            grid-template-columns: 1fr;
-           justify-self: self-start;
-           grid-row-gap: 4%;
-           align-self:center;
-            }
-            #contacts{
-   
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                padding: 40px;
-                margin-top: 50px;
-            }
-
- }
+ 
