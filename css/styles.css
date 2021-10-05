@@ -102,5 +102,10 @@ h1{
         animation-delay: 2s;
         animation-iteration-count: 1;
       }
-      
+      .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      }
  
